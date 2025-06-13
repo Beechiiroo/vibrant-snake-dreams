@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# 🐍 Snake Cyberpunk – Jeu rétro-futuriste stylé néon
 
-## Project info
+**Snake Cyberpunk** est une version moderne et stylisée du jeu classique Snake, entièrement revisitée dans un univers **cyberpunk** avec des effets **néon**, **particules dynamiques** et **animations fluides**. Inspiré de l’esthétique rétro-futuriste, ce projet fusionne nostalgie et modernité pour offrir une expérience de jeu unique et immersive.
 
-**URL**: https://lovable.dev/projects/24fc3302-63b1-45c5-8ba3-aa4c65d81614
+---
 
-## How can I edit this code?
+## ✨ Concept & Design
 
-There are several ways of editing your application.
+- 🎮 **Jeu Snake classique** modernisé avec une esthétique cyberpunk
+- 💡 **Effets Glow & Néon** : couleurs vives comme cyan, magenta, violet
+- 🌫️ **Interface glassmorphism** : flous et transparences élégants
+- 💥 **Effets de particules dynamiques** : lors des collisions ou des scores
+- 🌀 **Animations fluides** : transitions douces et gameplay réactif
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/24fc3302-63b1-45c5-8ba3-aa4c65d81614) and start prompting.
+## 🧰 Stack technique
 
-Changes made via Lovable will be committed automatically to this repo.
+- **HTML5 Canvas** ou **React + Three.js / Pixi.js**
+- **TypeScript / JavaScript**
+- **Tailwind CSS** (pour l’interface stylisée)
+- **Framer Motion** (animations fluides)
+- **Effets visuels personnalisés** (glow, particules)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎮 Fonctionnalités principales
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 🐍 Contrôle fluide du serpent via clavier (ou tactile sur mobile)
+- 🔢 Système de score avec animation et effets visuels
+- ✨ Particules générées à chaque mouvement, point mangé ou collision
+- 🎨 Design responsive avec interface "glass" et néons
+- 🌗 Support du **mode sombre clair** pour ambiance adaptable
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Lancement du jeu
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/<TON_UTILISATEUR>/snake-cyberpunk.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 2. Accéder au dossier
+cd snake-cyberpunk
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3. Installer les dépendances
+npm install
+
+# 4. Démarrer le jeu
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/24fc3302-63b1-45c5-8ba3-aa4c65d81614) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
