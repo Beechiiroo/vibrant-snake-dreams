@@ -21,16 +21,16 @@ export const useSnakeGame = () => {
   const gameLoopRef = useRef<NodeJS.Timeout>();
   const directionRef = useRef<Direction>(INITIAL_DIRECTION);
 
-  const generateFood = useCallback((): Position => {
+  const generateFood = useCallback((currentSnake: Position[]): Position => {
     let newFood: Position;
     do {
       newFood = {
         x: Math.floor(Math.random() * GRID_SIZE),
         y: Math.floor(Math.random() * GRID_SIZE),
       };
-    } while (snake.some(segment => segment.x === newFood.x && segment.y === newFood.y));
+    } while (currentSnake.some(segment => segment.x === newFood.x && segment.y === newFood.y));
     return newFood;
-  }, [snake]);
+  }, []);
 
   const resetGame = useCallback(() => {
     setSnake(INITIAL_SNAKE);
@@ -97,10 +97,13 @@ export const useSnakeGame = () => {
 
       const newSnake = [newHead, ...currentSnake];
 
-      // Check food collision
+      // Check food collision - SNAKE GROWS when eating food!
       if (newHead.x === food.x && newHead.y === food.y) {
+        // Increment score by 10 points
         setScore(prevScore => prevScore + 10);
-        setFood(generateFood());
+        // Generate new food position, avoiding snake body
+        setFood(generateFood(newSnake));
+        // Return snake WITH new head (no tail removal = GROWTH!)
         return newSnake;
       }
 
